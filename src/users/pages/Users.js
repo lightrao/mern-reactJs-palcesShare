@@ -9,7 +9,7 @@ const Users = () => {
       id: "u1",
       image: "imge url1",
       name: "Neo",
-      places: 3,
+      places: 1,
     },
     {
       id: "u2",
