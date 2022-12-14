@@ -1,3 +1,4 @@
+// src/App.js
 import React from "react";
 // react router dom is a package that has named exports,
 // which means it exports multiple things by their name.
