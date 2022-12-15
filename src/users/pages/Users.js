@@ -7,7 +7,8 @@ const Users = () => {
   const USERS = [
     {
       id: "u1",
-      image: "imge url1",
+      image:
+        "https://img0.baidu.com/it/u=2642223955,2176778396&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
       name: "Neo",
       places: 1,
     },
