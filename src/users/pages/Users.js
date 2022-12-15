@@ -2,6 +2,7 @@ import React from "react";
 
 import UsersList from "../components/UsersList";
 
+// stateful component
 const Users = () => {
   // dummy data
   const USERS = [
