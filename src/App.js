@@ -11,19 +11,23 @@ import {
 
 import Users from "./users/pages/Users";
 import NewPlace from "./places/pages/NewPlace";
+import MainNavigation from "./shared/components/Navigation/MainNavigation";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact={true}>
-          <Users />
-        </Route>
-        <Route path="/places/new" exact={true}>
-          <NewPlace />
-        </Route>
-        <Redirect to="/" />
-      </Switch>
+      <MainNavigation />
+      <main>
+        <Switch>
+          <Route path="/" exact={true}>
+            <Users />
+          </Route>
+          <Route path="/places/new" exact={true}>
+            <NewPlace />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
+      </main>
     </Router>
   );
 }
