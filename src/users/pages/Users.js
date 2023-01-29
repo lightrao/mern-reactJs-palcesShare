@@ -9,7 +9,7 @@ const Users = () => {
     {
       id: "u1",
       image:
-        "https://img0.baidu.com/it/u=2642223955,2176778396&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/1920px-FullMoon2010.jpg",
       name: "Neo",
       places: 1,
     },
