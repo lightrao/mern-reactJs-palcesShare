@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 // react router dom is a package that has named exports,
 // which means it exports multiple things by their name.
 import {
@@ -29,7 +29,15 @@ function App() {
   const logout = useCallback(() => {
     setToken(null);
     setUserId(null);
+    localStorage.removeItem("userData");
   }, []);
+
+  useEffect(() => {
+    const storeData = JSON.parse(localStorage.getItem("userData"));
+    if (storeData && storeData.token) {
+      login(storeData.userId, storeData.token);
+    }
+  }, [login]);
 
   let routes;
 
